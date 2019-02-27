@@ -2,7 +2,7 @@
 
 This is the offical Tensorflow implementation of [Attention-aware Multi-stroke Style Transfer](https://arxiv.org/abs/1901.05127), CVPR 2019
 
-[Yuan Yao](yaoy92@gmail.com), [Jianqiang Ren](rjq235@gmail.com), Xuansong Xie, Weidong Liu, Yong-Jin Liu, Jun Wang
+[Yuan Yao](mailto:yaoy92@gmail.com), [Jianqiang Ren](mailto:rjq235@gmail.com), Xuansong Xie, [Weidong Liu](https://www.tsinghua.edu.cn/publish/csen/4623/2010/20101224001537675975573/20101224001537675975573_.html), [Yong-Jin Liu](http://media.cs.tsinghua.edu.cn/en/liuyj), Jun Wang
 
 <div align='center'>
   <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/motivation.jpg' height="450px">
