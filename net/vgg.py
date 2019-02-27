@@ -2,8 +2,8 @@
 # summary: Code of CVPR 2019 accepted paper Attention-aware Multi-stroke Style Transfer
 
 import tensorflow as tf
-
 import tensorflow.contrib.slim as slim
+
 
 def vgg_arg_scope(weight_decay=0.0005):
     """Defines the VGG arg scope.

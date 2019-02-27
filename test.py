@@ -104,6 +104,7 @@ def single_img_test(model_path, content_path, style_path, inter_weight_value=1.0
 def imsave(filename, img):
     Image.fromarray(img).save(filename, quality=95)
 
+
 def empty_dir(path):
     for the_file in os.listdir(path):
         file_path = os.path.join(path, the_file)

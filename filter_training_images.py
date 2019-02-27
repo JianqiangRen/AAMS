@@ -22,7 +22,7 @@ if __name__ == "__main__":
         img = np.asarray(img)
         
         if len(np.shape(img)) != 3 or np.shape(img)[2] != 3:
-            print(image_path + " fomat illegal[{}/{}]".format(i, total_count))
+            print(image_path + " image format illegal[{}/{}]".format(i, total_count))
             os.remove(image_path)
     
     print("clean done")

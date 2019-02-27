@@ -105,7 +105,7 @@ if __name__ == "__main__":
             logdir= './tfmodel',
             init_fn=_get_init_fn(),
             summary_op = summary_op,
-            number_of_steps= 120000,
+            number_of_steps= 80000,
             log_every_n_steps= 100,
             save_interval_secs= 600,
             save_summaries_secs= 120,
