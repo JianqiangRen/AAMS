@@ -17,12 +17,17 @@ This is the offical Tensorflow implementation of [Attention-aware Multi-stroke S
 ## Usage
 ### Test
 
+Make sure there exists a sub-folder named test_result under images folder, then run 
 ```
-$ python test.py --model tfmodel/aams.pb \
+$ python test.py --model tf_model/aams.pb \
                         --content images/content/lenna_cropped.jpg \
                         --style images/style/candy.jpg \
                         --inter_weight 1.0
 ```
+both of the stylized image and the attention map will be generated in test_result.
+
+Our model is trained with tensorflow 1.4.
+
 ### Train
 ```
 $ python train.py --dataset datasets/COCO_Datasets/val2014
