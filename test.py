@@ -44,9 +44,9 @@ def single_img_test(model_path, content_path, style_path, inter_weight_value=1.0
         h = np.shape(content_feed)[0]
         w = np.shape(content_feed)[1]
         if h > w:
-            content_feed = cv2.resize(content_feed, (max_length, max_length *h /w))
+            content_feed = cv2.resize(content_feed, (max_length * w / h, max_length))
         else:
-            content_feed = cv2.resize(content_feed, (max_length*w/h, max_length) )
+            content_feed = cv2.resize(content_feed, (max_length, max_length * h / w))
     
     output_value, attention_value, centroids_value = sess.run([output, attention, centroids], feed_dict={content: content_feed,
                                                                         style: style_feed,
