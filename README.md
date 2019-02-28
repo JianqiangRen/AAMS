@@ -8,6 +8,13 @@ This is the offical Tensorflow implementation of [Attention-aware Multi-stroke S
   <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/motivation.jpg' height="350px">
 </div>
 
+
+<div align='center'>
+  <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/multi-stroke.jpg' height="350px">
+</div>
+
+
+
 ## Requirement
 - Python (version 2.7)
 - Tensorflow (>=1.4)
