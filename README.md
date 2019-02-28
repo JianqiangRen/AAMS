@@ -11,7 +11,7 @@ This is the offical Tensorflow implementation of [Attention-aware Multi-stroke S
 
 
 
-## Attention Machanism and Multi-stroke Fusion
+## Attention Mechanism and Multi-stroke Fusion
 <div align='center'>
   <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/multi-stroke.jpg' height="350px">
 </div>
