@@ -1,28 +1,31 @@
-# Attention-aware Multi-stroke Style Transfer
+Attention-aware Multi-stroke Style Transfer
+=====
 
-This is the official Tensorflow implementation of [Attention-aware Multi-stroke Style Transfer](https://arxiv.org/abs/1901.05127), CVPR 2019
+This is the official [Tensorflow](https://www.tensorflow.org/) implementation of our paper:
 
-[Yuan Yao](mailto:yaoy92@gmail.com), [Jianqiang Ren](mailto:jianqiang.rjq@alibaba-inc.com), Xuansong Xie, [Weidong Liu](https://www.tsinghua.edu.cn/publish/csen/4623/2010/20101224001537675975573/20101224001537675975573_.html), [Yong-Jin Liu](http://media.cs.tsinghua.edu.cn/en/liuyj), Jun Wang
+Attention-aware Multi-stroke Style Transfer, CVPR 2019. [[Project]](https://sites.google.com/view/yuanyao/attention-aware-multi-stroke-style-transfer) [[arXiv]](https://arxiv.org/abs/1901.05127)
 
-## Comparison
+[Yuan Yao](mailto:yaoy92@gmail.com), [Jianqiang Ren](mailto:jianqiang.rjq@alibaba-inc.com), Xuansong Xie, Weidong Liu, [Yong-Jin Liu](https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm), [Jun Wang](http://www0.cs.ucl.ac.uk/staff/Jun.Wang/)
+
+## Overview
+This project provides an arbitrary style transfer method that achieves both faithful style transfer and visual consistency between the content and stylized images. The key idea of the proposed method is to employ self-attention mechanism, multi-scale style swap and a flexible stroke pattern fusion strategy to smoothly and adaptably apply suitable stroke patterns on different regions. In this manner, the synthesized images of our method can be more visually pleasing and generated in one feed-forward pass.
 <div align='center'>
   <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/motivation.jpg' height="350px">
 </div>
 
-
-
-## Attention Mechanism and Multi-stroke Fusion
+## Examples
 <div align='center'>
-  <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/multi-stroke.jpg' height="350px">
+  <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/fig1.jpg' height="850px">
 </div>
 
-
-
-## Requirement
+## Prerequisites
 - Python (version 2.7)
 - Tensorflow (>=1.4)
 - Numpy
 - Matplotlib
+
+## Download
+* [MSCOCO](http://cocodataset.org/#home) dataset is applied for the training of the proposed self-attention autoencoder.
 
 ## Usage
 ### Test
@@ -43,12 +46,18 @@ Our model is trained with tensorflow 1.4.
 $ python train.py --dataset datasets/COCO_Datasets/val2014
 ```
 
-## Examples
-<div align='center'>
-  <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/fig1.jpg' height="850px">
-</div>
+## Citation
+If our work is useful for your research, please consider citing:
 
-
+    @inproceedings{yao2019attention,
+	    title={Attention-aware Multi-stroke Style Transfer},
+	    author={Yao, Yuan and Ren, Jianqiang and Xie, Xuansong and Liu, Weidong and Liu, Yong-Jin and Wang, Jun},
+	    booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+	    year={2019}
+    }
 
 ## Acknowledgement
-we acknowledge [avatar-net](https://github.com/LucasSheng/avatar-net) for their work.
+We express gratitudes to the style-agnostic style transfer works including [Style-swap](https://arxiv.org/abs/1612.04337), [WCT](https://arxiv.org/abs/1705.08086) and [Avatar-Net](https://arxiv.org/abs/1805.03857), as we benefit a lot from both their papers and codes.
+
+## Contact
+If you have any questions or suggestions about this paper, feel free to contact [Yuan Yao](mailto:yaoy92@gmail.com) or [Jianqiang Ren](mailto:jianqiang.rjq@alibaba-inc.com).
