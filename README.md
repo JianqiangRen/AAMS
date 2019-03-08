@@ -26,6 +26,7 @@ This project provides an arbitrary style transfer method that achieves both fait
 
 ## Download
 * [MSCOCO](http://cocodataset.org/#home) dataset is applied for the training of the proposed self-attention autoencoder.
+* Pre-trained [VGG-19](to-do) model.
 
 ## Usage
 ### Test
@@ -42,10 +43,15 @@ both of the stylized image and the attention map will be generated in test_resul
 Our model is trained with tensorflow 1.4.
 
 ### Train
+Download the  [MSCOCO](http://cocodataset.org/#home) dataset and filter out images with unsuitable format(grayscale,etc) by running
+
+```
+$ python filter_training_images.py --dataset datasets/COCO_Datasets/val2014
+```
+then
 ```
 $ python train.py --dataset datasets/COCO_Datasets/val2014
 ```
-
 ## Citation
 If our work is useful for your research, please consider citing:
 
