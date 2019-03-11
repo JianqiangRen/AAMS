@@ -26,7 +26,7 @@ This project provides an arbitrary style transfer method that achieves both fait
 
 ## Download
 * [MSCOCO](http://cocodataset.org/#home) dataset is applied for the training of the proposed self-attention autoencoder.
-* Pre-trained [VGG-19](to-do) model.
+* Pre-trained [VGG-19](http://download.tensorflow.org/models/vgg_19_2016_08_28.tar.gz) model.
 
 ## Usage
 ### Test
