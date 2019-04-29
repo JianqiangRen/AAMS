@@ -61,6 +61,9 @@ If our work is useful for your research, please consider citing:
 	    booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 	    year={2019}
     }
+    
+## License
+© Alibaba, 2019. For academic and non-commercial use only.
 
 ## Acknowledgement
 We express gratitudes to the style-agnostic style transfer works including [Style-swap](https://arxiv.org/abs/1612.04337), [WCT](https://arxiv.org/abs/1705.08086) and [Avatar-Net](https://arxiv.org/abs/1805.03857), as we benefit a lot from both their papers and codes.
