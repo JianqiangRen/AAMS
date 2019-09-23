@@ -57,8 +57,8 @@ def freeze():
 
 '''
 usage:
-python freeze.py --model_config_path configs/AvatarNet_config.yml
-                   --ckpt_path models/author/model.ckpt-120000
+python freeze_model.py  --ckpt_path tfmodel/model.ckpt-80000 \
+                --name tfmodel/aams.pb
 '''
 if __name__ == '__main__':
     freeze()
