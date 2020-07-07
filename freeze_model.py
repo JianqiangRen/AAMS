@@ -34,9 +34,9 @@ def freeze():
         content_image,
         style_image,
         inter_weight=inter_weight)
-    stylized_image = tf.add(stylized_image, 0, name='stylized_output')
-    attention_map = tf.add(attention_map, 0, name='attention_map')
-    centroids = tf.add(centroids, 0, name="centroids")
+    stylized_image = tf.identity(stylized_image, name='stylized_output')
+    attention_map = tf.identity(attention_map, name='attention_map')
+    centroids = tf.identity(centroids, name="centroids")
 
     init_op = tf.global_variables_initializer()
     
