@@ -13,6 +13,9 @@ This project provides an arbitrary style transfer method that achieves both fait
   <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/motivation.jpg' height="350px">
 </div>
 
+## Quick Start
+Our model is now available on [Modelscope](https://www.modelscope.cn/#/models/damo/cv_aams_style-transfer_damo/summary) platform for easy experience.
+
 ## Examples
 <div align='center'>
   <img src='https://github.com/JianqiangRen/AAMS/blob/master/images/guideline/fig1.jpg' height="850px">
